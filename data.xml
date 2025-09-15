@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aptech>
+<aptech xmlns:a="xmlnanamespace.com"  xmlns:b="xmlnanamespace.com" >
 
     <student>
 
-        <id>101</id>
-        <name>ali</name>
+        <a:id>101</a:id>
+        <a:name>ali</a:name>
         <email>ali@gmail.com</email>
         <age>20</age>
         <address>islamabad</address>
@@ -13,7 +13,7 @@
 
      <student>
 
-        <id>102</id>
+        <a:id>102</a:id>
         <name>zain</name>
         <email>zain@gmail.com</email>
         <age>19</age>
