@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE aptech [
+    <!ELEMENT aptech (student*)>
+    <!ELEMENT student (name+, email*, age?, (mobile | contact))>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT mobile (#PCDATA)>
+    <!ELEMENT contact (#PCDATA)>
+
+    <!ATTLIST student id CDATA #REQUIRED>
+
+    <!ENTITY Name "Aptech">
+    <!ENTITY b "hello">
+]>
+
+<!-- #REQUIRED
+#FIXED
+#IMPLIED -->
+
+<aptech>
+   
+    <student id = "1">
+        <name> &Name; </name>
+        <name>ali</name>
+        <age>20</age>
+        <mobile>20</mobile>
+
+        </student>
+
+         <student id = "2">
+        <name> &Name; </name>
+        <name>zain</name>
+        <email>ali@gmail.com</email>
+        <age>20</age>
+        <mobile>20</mobile>
+
+        </student>
+
+         <student id = "3">
+        <name>ali</name>
+        <name>zain</name>
+        <email>ali@gmail.com</email>
+        <age> &b; </age>
+        <mobile>20</mobile>
+
+        </student>
+</aptech>
